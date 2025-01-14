@@ -1,0 +1,22 @@
+.fila {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .fila div {
+    margin-right: 10px;
+  }
+  #tareas {
+    border: 2px solid #000000; /* Borde azul */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Esquinas redondeadas */
+    background-color: #dcdcdc; /* Fondo claro */
+    min-height: 50px; /* Altura mínima para que sea visible */
+  }
+  #nombreTarea {
+    width: 300px; /* Ancho fijo */
+  }
+  #prioridadTarea {
+    padding: 3px;
+  }
+  

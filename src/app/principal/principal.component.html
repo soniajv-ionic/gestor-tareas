@@ -1,0 +1,28 @@
+<div class="fila">
+    <div>
+      <label for="nombreTarea">Nombre tarea: </label>
+      <input
+        type="text"
+        id="nombreTarea"
+        placeholder="Escribe el nombre de la tarea"
+        [(ngModel)]="nombreTarea"
+      />
+    </div>
+    <div>
+      <label for="prioridadTarea">Prioridad: </label>
+      <select id="prioridadTarea" [(ngModel)]="prioridadTarea">
+        <option value="alta">Alta</option>
+        <option value="media">Media</option>
+        <option value="baja" selected>Baja</option>
+      </select>
+    </div>
+    <div>
+      <button id="guardarTarea" (click)="crear()">Guardar</button>
+    </div>
+  </div>
+  
+
+  <div id="tareas" class="fila">
+    <app-ficha-tarea *ngFor="let area of tareas" [tarea]=tareaActual></app-ficha-tarea>
+  </div>
+  <app-credits nombre="Sun" anyo="2025"></app-credits>
